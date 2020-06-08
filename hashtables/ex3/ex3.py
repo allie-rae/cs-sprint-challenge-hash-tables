@@ -1,12 +1,8 @@
 def intersection(arrays):
     dict = {}
-    shortestArray = None
     result = []
 
     for arr in arrays:
-        if shortestArray == None or len(arr) < len(shortestArray):
-            shortestArray = arr
-
         for num in arr:
             # here we are setting the number as the key,
             # and the value as the number of times this
